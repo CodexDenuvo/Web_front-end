@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {Border: 2px solid black;}
+    </style>
+</head>
+<body>
+  <h1>Mercado</h1>  
+    <b>Escolha seus produtos</b>
+<br>
+<br>
+    <b>1. Verduras</b>
+        <ul>
+            <li>Alface</li>
+            <li>Brócolis</li>
+            <li>Couve</li>
+        </ul>
+<br>
+    <b>2. frutas</b>
+        <ul>
+            <li>laranja</li>
+            <li>abacaxi</li>
+            <li>banana</li>
+        </ul>
+<br>
+    <b>3. Carnes</b>
+        <ul>
+            <li>Picanha</li>
+            <li>Alcatra</li>
+            <li>Filé</li>
+        </ul>
+<br>
+    <table>
+        <tr>
+            <td>Mês</td> <td colspan="2">Frutas</td>
+        </tr>
+        <tr>
+            <td></td> <td>laranja</td> <td>Abacaxi</td>
+        </tr>
+        <tr>
+            <td>Janeiro</td> <td>65</td> <td>110</td>
+        </tr>
+        <tr>
+            <td>Fevereiro</td> <td>55</td> <td>135</td>
+        </tr>
+        <tr>
+            <td>Março</td> <td>60</td> <td>150</td>
+        </tr>
+        <tr>
+            <td>Total</td> <td>180</td> <td>395</td>
+        </tr>
+    </table>
+      <a href="https://ifrs.edu.br/riogrande/"><img src="Logotipo_IF.png"></a>
+    <form method="post" action="recebe.php">
+       Nome:     <input type="text" name="nome" size="0" placeholder="Roberto Carlos"> <br>
+       Email:    <input type="email" name="email" placeholder="example@gmail.com"> <br>
+       Telefone: <input type="tel" name="telefone" placeholder="(55) 53 912345678"> <br>
+       Senha:    <input type="password" name="senha" placeholder="Senha"> <br>
+    </form>
+</body>
+</html>
