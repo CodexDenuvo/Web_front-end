@@ -1,0 +1,379 @@
+/*CSS INICIO*/
+header {
+    background-color:#397CAB;
+}
+body {
+    margin: 0vw;
+    padding: 0vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Itim', cursive;
+}
+h1 {
+    color: white;
+    font-family: 'Itim', cursive;
+}
+p {
+    color: white;
+    font-family: 'Itim', cursive;
+}
+span {
+    color: white;
+    font-family: 'Itim', cursive;
+}
+a {
+    color: white;
+    font-family: 'Itim', cursive;
+}
+.separadorhor {
+    background-color: white;
+    height: 0.4vw;
+    width: auto;
+    margin-top: 1vw;
+    margin-left: 3.5vw;
+}
+/*CSS NAV*/
+nav {
+    background-color:#397CAB;
+    height: 7.5vw;
+    display: flex;
+    flex-direction: row;
+}
+.divnav {
+    display: flex; 
+    margin-left: 1vw;
+}
+.Nome {
+    font-family: 'Itim', cursive;
+    color: white;
+    font-size: 5vw;
+    margin: 0vw;
+    padding: 0vw;
+    text-decoration: none;
+}
+.Nome:hover {
+    color: white;
+}
+form {
+    color: white;
+    margin-top: 2.75vw;
+    margin-left: 3.5vw;
+}
+.formulario {
+    height: 2vw;
+    width: 25vw;
+    position: absolute;
+}
+.formulario::placeholder{
+    font-size: 1.35vw;
+    color:grey;
+    font-family: 'Itim', cursive;
+}
+.lupa {
+    margin-left: 26vw;
+    width:  1.25vw;
+    height: 1.25vw;
+    cursor: pointer;
+    position:absolute;
+}
+.log {
+    color: white;
+    font-family: 'Itim', cursive;
+    font-size: 1.5vw;
+    position:absolute;
+    margin-top: -3vw;
+}
+.form-group {
+    height: auto;
+    width: 20vw;
+    margin-left: 30vw;
+    position:absolute;
+    margin-top: -2vw;
+}
+.form-control {
+    height: 3vw;
+    width: 10vw;
+    position:absolute;
+    max-width: none;
+    min-width: none;
+}
+.form-control::placeholder {
+    font-size: 1.35vw;
+    color:grey;
+    font-family: 'Itim', cursive;
+    position:absolute;
+}
+/*CSS MAIN*/
+.carrossel {
+    height: 35vw;
+}
+#img1 {
+    height: 35vw;
+}
+#img2 {
+    height: 35vw;
+}
+#img3 {
+    height: 35vw;
+}
+/*SECTION 1+*/
+section {
+    background-color:#397CAB;
+    padding: 0vw;
+    margin: 0vw;
+    border: 0vw;
+    height: 35vw;
+}
+.secindice {
+    margin-left: 9.5vw;
+    background-color: #6495ED;
+    height: 3vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10vw 10vw 10vw 10vw;
+}
+.posborder {
+    background-color: #528AB1;
+    height: 2.6vw;
+    margin: 0.2vw;
+    width: 79.6vw;
+    border-radius: 10vw 10vw 10vw 10vw;
+    display: flex;
+    flex-direction: row;
+}
+.indice {
+    font-size: 1.5vw;
+    margin-left: 20vw;
+    margin-top: 0.3vw;
+}
+.secindice a {
+    font-size: 1.25vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+    text-decoration: none;
+    color: white;
+}
+.barra {
+    font-size: 1.25vw;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+}
+.secpeixe {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.fundo {
+    background-color: white;
+    margin: 2vw;
+    margin-top: -0.25vw;
+    width: 95vw;
+    height: 24vw;
+    border-radius: 2vw 2vw 2vw 2vw;
+    display: flex;
+    flex-direction: row;
+}
+.divcat {
+    background-color: #397CAB;
+    height: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw; 
+    border-radius: 5vw 5vw 5vw 5vw;
+}
+.cat {
+    margin-left: 1vw;
+    font-size: 2.5vw;
+}
+.div1 {
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+.pdiv {
+    display: flex;
+    flex-direction: column;
+    width: 15.5vw;
+    margin-left: 2vw;
+}
+.p {
+    min-width: none;
+    height: 12vw;
+    width: 15.5vw;
+    margin-top: 2vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+    cursor: pointer;
+}
+.np {
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    color: black;
+    cursor: pointer;
+}
+.preco {
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    color: black;
+    cursor: pointer;
+}
+.frete {
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    color: black;
+    cursor: pointer
+}
+.passador {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    background-color: silver;
+    height: 20vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    opacity: 0.5;
+    border-radius: 2vw 2vw 2vw 2vw;
+    cursor: pointer;
+}
+.pass {
+    margin-top: 7vw;
+}
+.cat1 {
+    margin-left: 6vw;
+    color: white;
+    text-decoration: none;  
+}
+.cat1:hover {
+    color: white;
+}
+.sep {
+    display: flex;
+    flex-direction: column;
+}
+.peixed {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 27vw;
+}
+.linktop {
+    font-size: 2vw;
+    margin-left: 80vw;
+    text-decoration: none;
+    color: white;
+}
+.linktop:hover {
+    color: white;
+}
+/*SECTION 2*/
+.secalim {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.div2 {
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+.cat2 {
+    margin-left: 6vw;
+    color: white;
+    text-decoration: none;
+}
+.cat2:hover {
+    color: white;
+}
+/*SECION 3*/
+.secace {
+    display: flex;
+    flex-direction: column;
+}
+.div3 {
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+.cat3 {
+    margin-left: 6vw;
+    color: white;
+    text-decoration: none;
+}
+.cat3:hover {
+    color: white;
+}
+/*SECTION 4*/
+.secling {
+    display: flex;
+    flex-direction: column;
+    height: 29vw;
+}
+.fundoling {
+    background-color: white;
+    margin: 2vw;
+    margin-top: -0.25vw;
+    width: 95vw;
+    height: 18vw;
+    border-radius: 2vw 2vw 2vw 2vw;
+    display: flex;
+    flex-direction: row;
+}
+.div4 {
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+.cat4 {
+    margin-left: 6vw;
+    color: white;
+    text-decoration: none;
+}
+.cat4:hover {
+    color: white;
+}
+.b {
+    margin-top: 2vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+    cursor: pointer;
+    height: 10.75vw;
+}
+.fundoling p{
+    margin-top: 0.5vw;
+    color: black;
+    cursor: pointer;
+}
+.ling1 {
+    margin-left: 3vw;
+}
+.ling2 {
+    margin-left: 3.5vw;
+}
+.ling3 {
+    margin-left: 5vw;
+}
+.ling4 {
+    margin-left: 5vw;
+}
+.ling5 {
+    margin-left: 3vw;
+}
+/*CSS FOOTER*/
+footer {
+    background-color: #427193;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+.inic {
+    display: flex;
+    flex-direction: row;
+}
+.Email {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+.config {
+    font-size: 1.5vw;
+    margin: 3vw;
+    margin-left: 45vw;
+}
+.criador {
+    font-size: 1.5vw;
+    margin-left: 37.5vw;
+    margin-top: 2vw;
+}
