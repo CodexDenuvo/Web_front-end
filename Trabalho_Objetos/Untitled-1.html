@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Turma 1:<span id="Texto1"></span> 
+    <br>    <br>    <br>
+    Turma 2:<span id="Texto2"></span>
+    <br>    <br>    <br>
+    <br>    <br>    <br>
+    Professor 1:<span id="Texto3"></span> 
+    <br>    <br>    <br>
+    Professor 2:<span id="Texto4"></span>
+    <br>    <br>    <br>
+    <br>    <br>    <br>
+    6 Alunos:<span id="Texto5"></span> 
+    <br>    <br>    <br>
+    <script>
+class Pessoa {
+    nome;
+    cpf;
+    constructor() {
+        let nomes=[];
+        nomes.push("Marcio");
+        nomes.push("Bruno");
+        nomes.push("Carlos");
+        nomes.push("Paula");
+        nomes.push("Maria");
+        nomes.push("Almirante");
+        nomes.push("Thiago");
+        nomes.push("Mohammed");
+        nomes.push("Salah");
+        nomes.push("Hunter");
+        this.nome = nomes[Math.ceil(Math.random()*9)];
+        this.cpf = Math.ceil(Math.random()*100000000000);
+    }
+}
+class Professor extends Pessoa {
+    area;
+    telefone;
+    constructor() {
+        super();
+        let areas = [];
+        areas.push("Matemática");
+        areas.push("Português");
+        areas.push("Inglês");
+        areas.push("Espanhol");
+        areas.push("Física");
+        areas.push("Química");
+        areas.push("História");
+        areas.push("Filosofia");
+        areas.push("Biologia");
+        this.area = areas[Math.ceil(Math.random()*9)];
+        this.telefone = Math.ceil(Math.random()*100000000);
+    }
+}
+prof1 = new Professor();
+prof2 = new Professor();
+let d1 = JSON.stringify(prof1);
+let d2 = JSON.stringify(prof2);
+let e1 = document.getElementById("Texto3");
+let e2 = document.getElementById("Texto4");
+e1.innerText= d1;
+e2.innerText= d2;
+class Aluno extends Pessoa {
+    matricula;
+    constructor() {
+        super();
+        this.matricula = Math.ceil(Math.random()*100000000);
+    }
+}
+for (let i = 0; i<6; i++) {
+    let a1 = new Aluno();
+    let a2 = JSON.stringify(a1);
+    let a3 = document.getElementById("Texto5");
+    a3.innerText += a2;
+}
+class Turma {
+    professor1;
+    alunos;
+    identificacao;
+    constructor () {
+        var alunos = [];
+        for (let i = 0; i<4; i++) {
+            let a = new Aluno()
+            alunos.push(a);
+        }
+        this.alunos = alunos;
+        this.professor1 = new Professor();
+        let salas = [];
+        salas.push("A1");
+        salas.push("A2");
+        salas.push("A3");
+        salas.push("B1");
+        salas.push("B2");
+        salas.push("B3");
+        salas.push("C1");
+        salas.push("C2");
+        salas.push("C3");
+        this.identificacao = salas[Math.ceil(Math.random()*9)];
+    }
+    imprimeDados() {
+
+    }
+}
+let a1 = new Turma();
+let a2 = new Turma();
+let b1 = JSON.stringify(a1);
+let b2 = JSON.stringify(a2);
+let c1 = document.getElementById("Texto1");
+let c2 = document.getElementById("Texto2");
+c1.innerText= b1;
+c2.innerText= b2;
+</script>
+</body>
+</html>
