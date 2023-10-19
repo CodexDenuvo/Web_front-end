@@ -10,37 +10,38 @@
 <body>
     <header>
         <div id="divtitulo">
-            <span id="titulo">Torneio Todos Contra Todos</span>
-            <input type="button" value="resultados" id="results">
+            <span id="titulo">Torneio Todos Contra Todos de League of Legends:</span>
+            <div id="divresul">
+                <input type="button" value="Resultados" id="results" onclick="mostraresult()">
+            </div>
         </div>
     </header>
     <main>
         <div id="Adiv">
-            <div id="adiv1">
+            <br> <br>
+            <div id="divmae">
+                <div id="thediv">
+                    <label for="quantjogadores" id="digite">Digite o número de times do torneio:</label>
+                    <br>
+                    <div id="carne">
+                        <input type='number' id='quantjogadores'>
+                        <input type="button" value="Enviar" id="send" onclick="addjogad()"> <br> <br>
+                    </div>
+                    <input type="button" value="Gerar Jogos" id="criar" onclick="criarjogos()">
+                </div>
+                <div id="possiveltexto">
 
+                </div>
             </div>
-            <div id="adiv2">
-
-            </div>
-            <div id="adiv3">
-
-            </div>
-            <div id="adiv4">
-
-            </div>
-            <div id="adiv5">
-
-            </div>
-            <div id="adiv6">
-
-            </div>
-            <div id="adiv7">
-
+            <div id="dica">
+                <span id="start">Como ultilizar:</span> <br>
+                <span class="passos">Passo 1. Digite um numero entre 2 e 20.</span> <br>
+                <span class="passos">Passo 2. Adicione os jogadores ao precionar "Enviar".</span> <br>
+                <span class="passos">Passo 3. Precione "Gerar Jogos".</span> <br>
+                <span class="passos">Passo 4. Selecione o ganhador de cada jogo.</span> <br>
+                <span class="passos">Você também pode precionar "Resultados" para ver <br> como o torneio está neste momento.</span> <br>
             </div>
         </div>
     </main>
-    <footer>
-            <span id="creditos">Por : leonardo Corrêa de Sena turma : 2c</span>
-    </footer>
 </body>
 </html>
